@@ -48,7 +48,7 @@ G1.add_node('Depot', pos=depot_coords)
 
 for lieu, coord in destinations.items():
     response = requests.get(
-        f'https:',
+        f'https://geoservices.ign.fr/documentation/services/api-et-services-ogc/itineraires/api:',
         params={
             'start': f'{depot_coords[0]},{depot_coords[1]}',
             'end': f'{coord[0]},{coord[1]}'
